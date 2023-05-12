@@ -1,0 +1,82 @@
+﻿* {
+    font-family: 'Fira Sans', sans-serif !important;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #E6E6E6;
+}
+
+.has-details {
+  position: relative;
+}
+
+.has-details:hover div {
+  transform: scale(1);
+}
+
+.details {
+  position: absolute;
+  /* top: 0; */
+  transform: scale(0);
+  transition: transform 0.1s ease-in;
+  transform-origin: left;
+  display: inline;
+  /* background: white;
+  z-index: 20;
+  min-width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+  width: 300px; */
+}
+
+.popMenuComment {
+  position: absolute;
+  transform: scale(0);
+  transition: transform 0.1s ease-in;
+  transform-origin: left;
+  display: inline;
+  width: 300px;
+  z-index: 999;
+  top: -50px;
+}
+
+.addCommentShow {
+  position: absolute;
+  top: 0;
+  transform: scale(1);
+  transition: transform 0.1s ease-in;
+  transform-origin: left;
+  display: inline;
+  background: white;
+  z-index: 20;
+  min-width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+  width: 300px;
+}
+
+table td:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.hoverBackgroundColorComment {
+  background-color: rgba(255, 0, 0, 0.507);
+}
+
+.hoverBackgroundColorVoice {
+  background-color: rgba(255, 208, 0, 0.507);
+}
+
+.badgePosition {  
+  right: -10px;
+  top: -3px;
+  position: absolute;
+}
